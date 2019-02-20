@@ -10,5 +10,6 @@
   <input type="text" name="query" placeholder="Escriba algo..." [(ngModel)]="query"/>
   <p>Parametros de la busqueda {{ query }} </p>
 </form>
-<app-search [labelButton]="paco" [placeholder]="CECE"></app-search>
+<app-search [labelButton]="labelButton" [placeholder]="placeHolder" (searchEvent)="search($event)"></app-search>
+<p>{{msgEventSearch}}</p>
 <router-outlet></router-outlet>

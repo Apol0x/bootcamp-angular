@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,10 +9,14 @@ import { Component, Input } from '@angular/core';
 export class AppComponent {
   title = 'bootcamp-angular';
   public query: string;
-  paco: string;
-  CECE: string;
+  labelButton: string;
+  placeHolder: string;
+  public msgEventSearch: string;
   constructor(){
-    this.paco= "Busque aquí ...";
-    this.CECE= "";
+    this.labelButton= "Busque aquí ...";
+    this.placeHolder= "";
+  }
+  search(event){
+    this.msgEventSearch = event.query + ' => ' + event.resultado;
   }
 }

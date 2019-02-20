@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -12,6 +12,8 @@ export class SearchComponent implements OnInit {
   labelButton : string;
   @Input()
   placeholder : string;
+  @Output()
+  searchEvent = new EventEmitter();
 
   constructor() { 
     this.query = "";
@@ -22,6 +24,7 @@ export class SearchComponent implements OnInit {
 
   search(){
     this.result = 'Consulta realiza con query \"' + this.query +'\"';
+    this.searchEvent.emit({query: this.query, resultado: this.result});
   }
 
 }
