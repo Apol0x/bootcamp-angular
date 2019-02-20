@@ -8,11 +8,13 @@ import { FormsModule } from '@angular/forms';
 /* import { SearchComponent } from './search/search.component'; */
 import { DataService } from './data.service';
 import { FormSearchComponent } from './search/form-search/form-search.component';
+import { ListOwnersComponentComponent } from './search/list-owners-component/list-owners-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormSearchComponent
+    FormSearchComponent,
+    ListOwnersComponentComponent
   ],
   imports: [
     BrowserModule,
