@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SearchComponent } from './search/search.component';
+/* import { SearchComponent } from './search/search.component'; */
+import { DataService } from './data.service';
+import { FormSearchComponent } from './search/form-search/form-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    FormSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,7 @@ import { SearchComponent } from './search/search.component';
     CommonModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
