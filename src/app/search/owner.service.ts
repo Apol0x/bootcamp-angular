@@ -8,6 +8,6 @@ export class OwnerService {
   ) { }
 
   getOwners() {
-    return this.httpClient.get('https://jsonplaceholder.typicode.com/photos')
+    return this.httpClient.get('https://jsonplaceholder.typicode.com/photos');
   }
 }

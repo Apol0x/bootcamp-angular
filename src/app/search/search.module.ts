@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ListOwnersComponentComponent } from './list-owners-component/list-owners-component.component';
 import { HttpClientModule } from '@angular/common/http';
+import { OwnerService } from './owner.service';
 
 @NgModule({
   declarations: [FormSearchComponent, ListOwnersComponentComponent],
@@ -18,5 +19,6 @@ import { HttpClientModule } from '@angular/common/http';
     FormSearchComponent,
     ListOwnersComponentComponent
   ],
+  providers: [OwnerService]
 })
 export class SearchModule { }
