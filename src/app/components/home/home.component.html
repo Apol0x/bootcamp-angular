@@ -1,3 +1,16 @@
-<p>
- WELCOME TO THE JUNGLE!
-</p>
+<div>
+    WELCOME TO THE JUNGLE!
+    <p><b>DIVISAS</b></p>
+    <p>A: {{a | currency}}</p>
+    <p>B: {{b | currency:'EUR'}}</p>
+    <p>B: {{b | currency}}</p>
+    <p><b>FECHAS</b></p>
+    <p>B: {{date | date}}</p>
+    <p><b>SLICES</b></p>
+    <ul>
+      <li *ngFor="let i of collection | slice:1:100">{{i}}</li>
+    </ul>
+    <p><b>PIPES ASYNC</b></p>
+    <div><code>observable|async</code>: Time: {{ time | async }}</div>
+   </div>
+   
