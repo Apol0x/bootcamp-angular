@@ -8,10 +8,14 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 /* import { SearchComponent } from './search/search.component'; */
 import { DataService } from './data.service';
+import { HomeComponent } from './components/home/home.component';
+import { VetsComponent } from './components/vets/vets.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    VetsComponent
   ],
   imports: [
     BrowserModule,
