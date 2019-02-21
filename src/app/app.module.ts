@@ -11,13 +11,15 @@ import { DataService } from './data.service';
 import { HomeComponent } from './components/home/home.component';
 import { VetsComponent } from './components/vets/vets.component';
 import { DetailOwnerComponent } from './components/detail-owner/detail-owner.component';
+import { FormOwnerComponent } from './components/form-owner/form-owner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     VetsComponent,
-    DetailOwnerComponent
+    DetailOwnerComponent,
+    FormOwnerComponent
   ],
   imports: [
     BrowserModule,
