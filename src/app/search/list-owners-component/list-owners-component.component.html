@@ -1,7 +1,13 @@
-
-  <ul>
-    <li *ngFor="let owner of owners; let i = index;">
+<!-- <ul>
+  <li *ngFor="let owner of owners; let i = index;">
+    <span *ngIf="i<2">
       {{owner.id}} {{owner.title}}
-    </li>
-  </ul>
+    </span>
+  </li>
+</ul> -->
 
+<div *ngFor="let owner of owners; let i = index;" >
+    <span *ngIf="i<2" >
+        {{owner.id}} {{owner.title}}
+    </span>
+  </div>
