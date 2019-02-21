@@ -1,3 +1,5 @@
+import { DetailOwnerComponent } from './components/detail-owner/detail-owner.component';
+import { VetsComponent } from './components/vets/vets.component';
 import { FormSearchComponent } from './search/form-search/form-search.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +18,14 @@ const routes: Routes = [
   {
     path: 'owners',
     component: ListOwnersComponentComponent
+  },
+  {
+    path: 'vets',
+    component: VetsComponent
+  },
+  {
+    path: 'owners/:id',
+    component: DetailOwnerComponent
   }
 ];
 
