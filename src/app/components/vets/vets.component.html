@@ -1,3 +1,10 @@
-<p>
-  vets works!
-</p>
+<table border="1">
+    <thead>
+      <tr>
+          <th>NAME - LASTNAME</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let vet of vets; let i = index;">
+        <td>{{vet.firstName}} {{vet.lastName}}</td>
+      </tr>
+  </table>

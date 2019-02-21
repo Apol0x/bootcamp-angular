@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  public a: number;
+  public b: number;
 
   constructor() { }
 
   ngOnInit() {
+    this.a = 0.259;
+    this.b = 1.3495;
   }
 
 }

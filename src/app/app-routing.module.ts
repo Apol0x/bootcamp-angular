@@ -1,3 +1,4 @@
+import { HomeComponent } from './components/home/home.component';
 import { DetailOwnerComponent } from './components/detail-owner/detail-owner.component';
 import { VetsComponent } from './components/vets/vets.component';
 import { FormSearchComponent } from './search/form-search/form-search.component';
@@ -7,10 +8,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { ListOwnersComponentComponent } from './search/list-owners-component/list-owners-component.component';
 
 const routes: Routes = [
- /*  {
+  {
     path: '',
-    component: AppComponent
-  }, */
+    component: HomeComponent
+  },
   {
     path: 'search',
    component: FormSearchComponent

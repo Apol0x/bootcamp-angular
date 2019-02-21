@@ -16,7 +16,7 @@ export class OwnerService {
     return this.httpClient.get<Owner[]>('http://localhost:9966/petclinic/api/owners');
   }
 
-  onSelect(owner: Owner) {
-    this.router.navigate(['/owners', owner.id]);
+  getOwnersById(owner){
+    return this.httpClient.get<Owner>('http://localhost:9966/petclinic/api/owners/'+owner);
   }
 }

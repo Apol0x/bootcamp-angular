@@ -3,7 +3,7 @@ import {Owner} from './owner';
 /* import {PetType} from './pettype';
  */
 
-export interface Owner {
+export interface Pet {
   id: number;
   name: string;
   birthData: string;
